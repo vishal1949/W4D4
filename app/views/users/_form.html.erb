@@ -1,0 +1,12 @@
+
+<form action="<%=action_url%>" method="post">
+    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>"> 
+<%# remember ^ and you wont have aa problem %>
+    <label for='new-user-email'>Email: </label>
+    <input id='new-user-email' type="text" name="user[email]">
+    <br>
+    <label for='password'>Password: </label>
+    <input id='password' type="password" name="user[password]">
+    <br>
+    <input type="submit" value="<%=button_text%>">
+</form>
